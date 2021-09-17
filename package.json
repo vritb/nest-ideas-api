@@ -4,6 +4,10 @@
   "description": "description",
   "author": "Kelvin Mai, Volker Reichel volker@vritb.de",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vritb/nest-ideas-api.git"
+  },
   "engines": {
     "node": "~10"
   },
@@ -17,9 +21,11 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "doc": "compodoc -p tsconfig.doc.json --port 8888 -s"
   },
   "dependencies": {
+    "@compodoc/compodoc": "^1.1.15",
     "@nestjs/common": "^5.3.11",
     "@nestjs/core": "^5.3.11",
     "@nestjs/graphql": "^5.4.0",
@@ -33,6 +39,7 @@
     "graphql": "^14.0.2",
     "graphql-tools": "^4.0.1",
     "jsonwebtoken": "^8.3.0",
+    "mysql2": "^2.3.0",
     "pg": "^7.5.0",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.2.2",

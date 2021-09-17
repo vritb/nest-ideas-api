@@ -23,8 +23,8 @@ export class UserEntity {
   created: Date;
 
   @Column({
-    type: 'text',
     unique: true,
+    length: 50
   })
   username: string;
 
