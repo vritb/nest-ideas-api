@@ -1,4 +1,4 @@
-# Ideas APP API
+# Ideas APP API Forked From [kelvin-mai/nest-ideas-api](https://github.com/kelvin-mai/nest-ideas-api.git)
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
@@ -43,7 +43,7 @@ A reddit/twitter style app to keep track of posted App Ideas. This is the compan
 
 ### Stack
 
-- Database - PostgreSQL
+- Database - <span style="color:red">Changed</span> from PostgreSQL to MySQL
 - REST API - NestJS
 - GraphQL API - NestJS
 - Rest Frontend - Angular with NGRX

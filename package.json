@@ -2,7 +2,7 @@
   "name": "ideas-api",
   "version": "0.0.0",
   "description": "description",
-  "author": "Kelvin Mai",
+  "author": "Kelvin Mai, Volker Reichel volker@vritb.de",
   "license": "MIT",
   "engines": {
     "node": "~10"

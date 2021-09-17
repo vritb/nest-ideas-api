@@ -13,7 +13,7 @@ A place to see and post ideas in the style of reddit and twitter
 
 ## Stack
 
-- Database - PostgreSQL
+- Database - <span style="color:red">Changed</span> 
 - REST API - NestJS
 - GraphQL API - NestJS
 - Rest Frontend - Angular with NGRX
