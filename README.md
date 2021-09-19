@@ -46,5 +46,6 @@ A reddit/twitter style app to keep track of posted App Ideas. This is the compan
 - Database - <span style="color:red">Changed</span> from PostgreSQL to MySQL
 - REST API - NestJS
 - GraphQL API - NestJS
+- Apollo Server Express - NestJS <span style="color:red">ADDED</span>
 - Rest Frontend - Angular with NGRX
 - GraphQL Frontend - React (Native?) with Apollo Client

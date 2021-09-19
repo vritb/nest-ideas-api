@@ -20,7 +20,30 @@ A place to see and post ideas in the style of reddit and twitter
 - GraphQL Frontend - React (Native?) with Apollo Client
 
 
-## Changes to the Project
+## Project Architecture
+
+The overall architecture and induced dependencies are as follows:
+
+Project Directory  
+
+![Project Directory](images/project-directory.png)
+
+Source Directory
+
+![Source Directory](images/project-src-directory.png)
+
+
+### Application Artifacts
+
+The application (`App`) consists of three related domain objects: `Users`, `Ideas` and `Comments`.  
+Each Domain Object has in its own module.  
+Domain Objects are manipulated via module specific `Services`. 
+
+## Project Directory Structure
+![Architecture / Dependencies](images/ideas-api-dependencies-graph.png)
+
+
+# Changes to the Project
 
 - Database: 
     use MySQL
@@ -29,9 +52,12 @@ A place to see and post ideas in the style of reddit and twitter
     - sample.env    added DATABASE_NAME='ideas'  REASON: MySQL needs this.
 
 - Dependencies
-    - installed 
-        npm install --save reflect-metadata@0.1.12  REASON: npm WARN @nestjs/typeorm@5.3.0 requires a peer of reflect-metadata@0.1.12 but none is installed.
-        npm install --save mysql2  REASON: using MySQL instead of PostGresQL
+    - installed
+        - npm install --save reflect-metadata@0.1.12  
+        REASON: *npm WARN @nestjs/typeorm@5.3.0 requires a peer of reflect-metadata@0.1.12 but none is installed.*
+    
+        - npm install --save mysql2  
+        REASON: *using MySQL instead of PostGresQL*
 
 - Code
     - Database
