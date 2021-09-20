@@ -43,6 +43,28 @@ Domain Objects are manipulated via module specific `Services`.
 ![Architecture / Dependencies](images/ideas-api-dependencies-graph.png)
 
 
+# Entities and Their Relations
+
+![Entities / Relations](images/entities-relations.png)
+
+## How to obtain?
+
+1. Start the app
+2. Open <a href="http://localhost:8080/graphql">http://localhost:8080/graphql</a> in a browser to display the GraphQL Playground.  
+`Playground` is a tool to visually explore the GraphQL objects of an application.  
+3. Open a second browser tab
+4. Open <a href="https://apis.guru/graphql-voyager">apis.guru/graphql-voyager</a>
+5. Click on `Change Schema` button.
+6. Switch to tab `Introspection`.
+7. Click on `Copy Introspection Query`.
+8. Paste then text into `GraphQL Playground`s Query field.
+9. Run the query.
+10. Copy the returned schema data.
+11. Switch back to http://apis.guru/graphql-voyager and paste the returned schema into the text area. 
+12. Clik `Display` button and wait a moment. You will see a graph displaying the relations between your entities.
+
+
+
 # Changes to the Project
 
 - Database: 
