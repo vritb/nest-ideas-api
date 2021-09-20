@@ -63,6 +63,17 @@ Domain Objects are manipulated via module specific `Services`.
 11. Switch back to http://apis.guru/graphql-voyager and paste the returned schema into the text area. 
 12. Clik `Display` button and wait a moment. You will see a graph displaying the relations between your entities.
 
+### Security Hint
+
+Use 
+```typescript
+GraphQLModule.forRoot({
+...
+introspection: process.env.NODE_ENV !== 'production'
+...
+})
+```
+in your Apollo Server configuration to prevent introspection of apps in production.
 
 
 # Changes to the Project
@@ -92,8 +103,8 @@ Domain Objects are manipulated via module specific `Services`.
                 })
                 username: string;
                 ```
-                REASON  BLOB/TEXT column 'username' used in key specification without a key length +2ms
-                QueryFailedError: BLOB/TEXT column 'username' used in key specification without a key length
+                REASON:  *BLOB/TEXT column 'username' used in key specification without a key length +2ms
+                QueryFailedError: BLOB/TEXT column 'username' used in key specification without a key length*
 
 - Tooling
     - Documentation / Visualization of Project Architecture
